@@ -1,2 +1,4 @@
 server.log
 server.pid
+db/
+tmp/

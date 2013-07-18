@@ -55,6 +55,11 @@
 			<key>Path</key>
 			<string>Gemfile</string>
 		</dict>
+		<key>Procfile</key>
+		<dict>
+			<key>Path</key>
+			<string>Procfile</string>
+		</dict>
 		<key>README.markdown</key>
 		<dict>
 			<key>Path</key>
