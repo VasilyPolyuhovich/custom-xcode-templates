@@ -79,6 +79,7 @@
 		<string>Rakefile</string>
 		<string>Gemfile</string>
 		<string>Gemfile.lock</string>
+		<string>Procfile</string>
 		<string>.gitignore</string>
 		<string>.rvmrc</string>
 		<string>README.markdown</string>
