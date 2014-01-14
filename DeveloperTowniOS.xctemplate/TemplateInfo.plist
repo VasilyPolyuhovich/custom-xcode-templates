@@ -26,22 +26,23 @@
 			<key>Group</key>
 			<string>Environment Configuration</string>
 		</dict>
-		<key>../.rvmrc</key>
+		<key>../.ruby-version</key>
 		<dict>
 			<key>Group</key>
 			<string>Environment Configuration</string>
 			<key>Path</key>
-			<string>rvmrc</string>
+			<string>ruby-version</string>
 		</dict>
 		<key>../Podfile</key>
 		<dict>
 			<key>Group</key>
 			<string>Environment Configuration</string>
 			<key>Beginning</key>
-			<string>platform :ios, &quot;5.0&quot;
+			<string>platform :ios, &quot;7.0&quot;
 
 pod &quot;MRCEnumerable&quot;
-pod &quot;TestFlightSDK&quot;, &quot;1.1&quot;
+pod &quot;TestFlightSDK&quot;
+pod &quot;ReactiveCocoa&quot;
 </string>
 		</dict>
 		<key>../Gemfile</key>
