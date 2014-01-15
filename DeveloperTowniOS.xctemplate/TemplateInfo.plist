@@ -65,7 +65,7 @@ pod &quot;ReactiveCocoa&quot;
 		<string>../Podfile</string>
 		<string>../.gitignore</string>
 		<string>../Gemfile</string>
-		<string>../.rvmrc</string>
+		<string>../.ruby-version</string>
 	</array>
 	<key>Options</key>
 	<array>
@@ -168,7 +168,7 @@ pod &quot;ReactiveCocoa&quot;
 			<key>Default</key>
 			<string>true</string>
 			<key>Name</key>
-			<string>Include Testglight Team Token</string>
+			<string>Include Testflight App Token</string>
 			<key>Type</key>
 			<string>checkbox</string>
 			<key>Identifier</key>
@@ -198,7 +198,7 @@ end
 		</dict>
 		<dict>
 			<key>Placeholder</key>
-			<string>{TestFlight SDK Team Token}</string>
+			<string>{TestFlight SDK App Token}</string>
 			<key>NotPersisted</key>
 			<true/>
 			<key>RequiredOptions</key>
@@ -213,7 +213,7 @@ end
 			<key>Type</key>
 			<string>text</string>
 			<key>Name</key>
-			<string>Testflight Team Token</string>
+			<string>Testflight App Token</string>
 		</dict>
 	</array>
 	<key>SortOrder</key>
