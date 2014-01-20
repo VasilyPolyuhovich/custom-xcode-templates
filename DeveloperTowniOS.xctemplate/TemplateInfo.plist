@@ -42,9 +42,9 @@
 
 pod &quot;MRCEnumerable&quot;
 pod &quot;TestFlightSDK&quot;
-pod &quot;ReactiveCocoa&quot;, &quot;&tilde;&gt;2.1&quot;
-pod &quot;RestKit&quot;, &quot;&tilde;&gt;.21&quot;
-pod &quot;RestKit/Testing&quot;, &quot;&tilde;&gt;.21&quot;
+pod &quot;ReactiveCocoa&quot;, &quot;~&gt;2.1&quot;
+pod &quot;RestKit&quot;, &quot;~&gt;.21&quot;
+pod &quot;RestKit/Testing&quot;, &quot;~&gt;.21&quot;
 </string>
 		</dict>
 		<key>../Gemfile</key>
