@@ -42,7 +42,9 @@
 
 pod &quot;MRCEnumerable&quot;
 pod &quot;TestFlightSDK&quot;
-pod &quot;ReactiveCocoa&quot;
+pod &quot;ReactiveCocoa&quot;, &quot;&tilde;&gt;2.1&quot;
+pod &quot;RestKit&quot;, &quot;&tilde;&gt;.21&quot;
+pod &quot;RestKit/Testing&quot;, &quot;&tilde;&gt;.21&quot;
 </string>
 		</dict>
 		<key>../Gemfile</key>
@@ -188,8 +190,9 @@ pod &quot;ReactiveCocoa&quot;
 					<key>Definitions</key>
 					<dict>
 						<key>../Podfile:tests</key>
-						<string>target :___PACKAGENAME___Tests, :exclusive =&gt; true do
-	pod &quot;OCMock&quot;, &quot;2.0.1&quot;
+						<string>target &quot;___PACKAGENAME___Tests&quot;.to_sym, :exclusive =&gt; true do
+	pod &quot;OCMock&quot;
+	pod &quot;OHHTTPStubs&quot;
 end
 </string>
 					</dict>
