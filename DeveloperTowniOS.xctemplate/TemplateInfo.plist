@@ -12,13 +12,6 @@
 	<true/>
 	<key>Definitions</key>
 	<dict>
-		<key>../RunPlatformUnitTests</key>
-		<dict>
-			<key>Group</key>
-			<string>Environment Configuration</string>
-			<key>Path</key>
-			<string>RunPlatformUnitTests</string>
-		</dict>
 		<key>../.gitignore</key>
 		<dict>
 			<key>Path</key>
@@ -38,13 +31,20 @@
 			<key>Group</key>
 			<string>Environment Configuration</string>
 			<key>Beginning</key>
-			<string>platform :ios, &quot;7.0&quot;
+			<string><![CDATA[
+platform :ios, "7.0"
 
-pod &quot;MRCEnumerable&quot;
-pod &quot;TestFlightSDK&quot;
-pod &quot;ReactiveCocoa&quot;, &quot;~&gt;2.1&quot;
-pod &quot;RestKit&quot;, &quot;~&gt;.21&quot;
-pod &quot;RestKit/Testing&quot;, &quot;~&gt;.21&quot;
+pod "MRCEnumerable"
+pod "TestFlightSDK"
+pod "ReactiveCocoa", "~>2.1"
+pod "RestKit", "~>.21"
+pod "RestKit/Testing", "~>.21"
+
+target "___PACKAGENAME___Tests".to_sym, :exclusive => true do
+	pod "OCMock"
+	pod "OHHTTPStubs"
+end
+]]>
 </string>
 		</dict>
 		<key>../Gemfile</key>
@@ -56,14 +56,13 @@ pod &quot;RestKit/Testing&quot;, &quot;~&gt;.21&quot;
 		</dict>
 	</dict>
 	<key>Description</key>
-	<string>based on single view application, takes a testflight team token, provides .rvmrc, Gemfile, Podfile and augments app did launch with testflight initialization.</string>
+	<string>based on single view application, provides .rvmrc, Gemfile, Podfile.</string>
 	<key>Identifier</key>
 	<string>com.developertown.ios</string>
 	<key>Kind</key>
 	<string>Xcode.Xcode3.ProjectTemplateUnitKind</string>
 	<key>Nodes</key>
 	<array>
-		<string>../RunPlatformUnitTests</string>
 		<string>../Podfile</string>
 		<string>../.gitignore</string>
 		<string>../Gemfile</string>
@@ -96,7 +95,15 @@ pod &quot;RestKit/Testing&quot;, &quot;~&gt;.21&quot;
 			<key>Identifier</key>
 			<string>includeMockServer</string>
 		</dict>
-		<dict>
+		<!--<dict> 
+			<key>Identifier</key>
+			<string>includeTestflight</string>
+			<key>Name</key>
+			<string>Include Testflight App Token</string>
+			<key>Type</key>
+			<string>checkbox</string>
+			<key>Default</key>
+			<string>true</string>
 			<key>Units</key>
 			<dict>
 				<key>true</key>
@@ -166,17 +173,9 @@ pod &quot;RestKit/Testing&quot;, &quot;~&gt;.21&quot;
 						<string>___PACKAGENAME___-Prefix.pch:objC:aliasNSLog</string>
 					</array>
 				</dict>
-			</dict>
-			<key>Default</key>
-			<string>true</string>
-			<key>Name</key>
-			<string>Include Testflight App Token</string>
-			<key>Type</key>
-			<string>checkbox</string>
-			<key>Identifier</key>
-			<string>includeTestflight</string>
-		</dict>
-		<dict>
+			</dict>			
+		</dict>-->
+		<!-- <dict>
 			<key>Identifier</key>
 			<string>includeUnitTests</string>
 			<key>Units</key>
@@ -190,16 +189,13 @@ pod &quot;RestKit/Testing&quot;, &quot;~&gt;.21&quot;
 					<key>Definitions</key>
 					<dict>
 						<key>../Podfile:tests</key>
-						<string>target &quot;___PACKAGENAME___Tests&quot;.to_sym, :exclusive =&gt; true do
-	pod &quot;OCMock&quot;
-	pod &quot;OHHTTPStubs&quot;
-end
+						<string>
 </string>
 					</dict>
 				</dict>
 			</dict>
-		</dict>
-		<dict>
+		</dict> -->
+		<!-- <dict>
 			<key>Placeholder</key>
 			<string>{TestFlight SDK App Token}</string>
 			<key>NotPersisted</key>
@@ -217,7 +213,7 @@ end
 			<string>text</string>
 			<key>Name</key>
 			<string>Testflight App Token</string>
-		</dict>
+		</dict> -->
 	</array>
 	<key>SortOrder</key>
 	<integer>1</integer>
