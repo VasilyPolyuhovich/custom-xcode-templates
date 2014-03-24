@@ -35,10 +35,7 @@
 platform :ios, "7.0"
 
 pod "MRCEnumerable"
-pod "TestFlightSDK"
 pod "ReactiveCocoa", "~>2.1"
-pod "RestKit", "~>.21"
-pod "RestKit/Testing", "~>.21"
 
 target "___PACKAGENAME___Tests".to_sym, :exclusive => true do
 	pod "OCMock"
