@@ -32,6 +32,7 @@
 			<string>Environment Configuration</string>
 			<key>Beginning</key>
 			<string><![CDATA[
+source 'https://github.com/CocoaPods/Specs.git'
 platform :ios, "7.0"
 
 pod "MRCEnumerable"
